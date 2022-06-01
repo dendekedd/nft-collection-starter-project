@@ -16,6 +16,13 @@ import SelectButton from './SelectButton';
 import Content from './content';
 import Wallet from './wallet'
 import Account from './account'
+//DaisukeAdd
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableContainer from '@mui/material/TableContainer';
+import Paper from '@mui/material/Paper';
+import Title from "./title";
+import Detail from "./detail";
 
 // Constantsを宣言する: constとは値書き換えを禁止した変数を宣言する方法です。
 const TWITTER_HANDLE = "あなたのTwitterのハンドルネームを貼り付けてください";
@@ -88,7 +95,7 @@ const App = () => {
       onClick={connectWallet}
       className="cta-button connect-wallet-button"
     >
-      Connect to Wallet
+            Walletに接続する
     </button>
   );
   // App.js
@@ -114,11 +121,26 @@ const App = () => {
             <Route path="/" element={<>
               <Header />
               <Img />
+
+
+              <Title/>
+
+              <Detail/>
               <div className="Table"><MTable /></div>
-              <Icon />
-              <SelectButton />
+
+              <p className="information" id="buyticket">チケット購入</p>
+              <div className="NFTIcon">
+                <Table sx={{ minWidth: 400 }} aria-label="simple table">
+                  <TableBody>
+                  <Icon />
               <Content />
               <Button />
+                  </TableBody>
+                        </Table>
+
+            </div>
+
+
               <Footer />
             </>} />
             <Route path="/table" element={<MTable />} />

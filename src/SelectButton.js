@@ -17,7 +17,7 @@ const SelectButton = () => {
         <div className='Button-container'>
             <div className='Button'>
                 <FormControl fullWidth>
-                    <InputLabel id="demo-simple-select-label">Network</InputLabel>
+                    <InputLabel id="demo-simple-select-label">Networkを選択</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"

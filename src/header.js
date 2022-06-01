@@ -22,6 +22,7 @@ const Header = () => {
     };
 
     return (
+    <div className="header">
         <div className="header-above">
             <Drawer variant="temporary" open={drawerOpen} onClose={handleDrawerToggle}>
                 <List>
@@ -48,6 +49,9 @@ const Header = () => {
                 </div>
             </div>
         </div>
+
+        <a href="#buyticket" class="btn btn--circle btn--circle-c btn--shadow"><a>▼</a></a>
+     </div>
     );
 }
 
