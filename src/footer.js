@@ -3,9 +3,20 @@ import "./styles/App.css";
 const Footer = () =>{
     return (
         <div className="footer-container">
-            <p className="footer-main1">サイトのご利用について</p>
-            <p className="footer-sub1">利用規約</p>
+             <div class="footer01">
+                <ul class="menu">
+                    <li><a href="#">利用規約</a></li>
+                    <li><a href="#">個人情報保護方針</a></li>
+                     <li><a href="#">特定商取引法に基づく表記</a></li>
+                     <li><a href="#">会社ホームページ</a></li>
+                     <li><a href="#">お問い合わせ</a></li>
+                </ul>
+                <p class="copyright">
+                Copyright © TicketMe Inc.
+                </p>
+            </div>
         </div>
+
     );
 };
 

@@ -16,19 +16,22 @@ const rows = [
   createData('日時', '5月27日(金) 18:00~21:00'),
   createData('会場', 'East Venture 六本木オフィス'),
   createData('主催', '合同会社gibierco'),
-  createData('料金', '0.01ETH'),
-  createData('協力', 'EastVenture'),
+  createData('料金', '40MATIC（約3000円）'),
+  createData('協力', 'EastVentures'),
+  createData('定員', '50名'),
 ];
 
 const MTable = () => {
   return (
+
     <div className='Table'>
-      <p className='Overview'>OverView</p>
-      <p className='information'>開催情報</p>
-      <TableContainer component={Paper}>
+      <p className='information'>イベント情報</p>
+
         <Table sx={{ minWidth: 400 }} aria-label="simple table">
           <TableBody>
+            
             {rows.map((row) => (
+              
               <TableRow
                 key={row.name}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -45,8 +48,8 @@ const MTable = () => {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
     </div>
+
   );
 }
 

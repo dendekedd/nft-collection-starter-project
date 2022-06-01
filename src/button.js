@@ -58,7 +58,7 @@ const Button = () => {
             onClick={connectWallet}
             className="cta-button connect-wallet-button"
         >
-            Connect to Wallet
+            Walletに接続する
         </button>
     );
     // App.js
@@ -117,7 +117,7 @@ const Button = () => {
             renderNotConnectedContainer()
         ) : (
             <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
-                NFTの購入
+                MATICで購入する
             </button>
         )
     );

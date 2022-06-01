@@ -59,7 +59,7 @@ const Wallet = () => {
             onClick={connectWallet}
             className="cta-button connect-wallet-button"
         >
-            Connect to Wallet
+            Walletに接続する
         </button>
     );
     // App.js
